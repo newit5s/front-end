@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
 
 // Dynamic import
 const Globe = dynamic(() => import("react-globe.gl"), {
@@ -46,9 +47,11 @@ interface Props {
     altitude?: number;
     isZoomComplete?: boolean;
     isPaused?: boolean; // Pause animations to free GPU
+    onInteractionChange?: (isInteracting: boolean) => void;
 }
 
-export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isPaused = false }: Props) {
+export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isPaused = false, onInteractionChange }: Props) {
+    const t = useTranslations("hero");
     const globeRef = useRef<any>(null);
     const [globeReady, setGlobeReady] = useState(false);
     const [shouldMount, setShouldMount] = useState(false);
@@ -56,13 +59,59 @@ export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isP
     const [selectedPort, setSelectedPort] = useState<Port | null>(null);
     const [hoveredPort, setHoveredPort] = useState<string | null>(null);
     const [countries, setCountries] = useState<any>({ features: [] });
-    // Interaction Control (Mobile Scroll Trap Prevention)
+    // Mobile Interaction Logic
     const [isInteractionEnabled, setIsInteractionEnabled] = useState(false);
+    const [mobileAltitude, setMobileAltitude] = useState<number | null>(null);
+
+    // Calculate effective altitude: Use prop altitude normally, but override if mobile interaction is active
+    const effectiveAltitude = useMemo(() => {
+        if (isInteractionEnabled && mobileAltitude !== null) return mobileAltitude;
+        return altitude;
+    }, [altitude, isInteractionEnabled, mobileAltitude]);
+
+    // Handle Mobile Interaction Toggle
+    const handleMobileInteract = () => {
+        setIsInteractionEnabled(true);
+        onInteractionChange?.(true);
+        // Auto-zoom IN to detail view
+        setMobileAltitude(1.8);
+
+        // Disable body scroll when interacting to prevent weirdness
+        document.body.style.overflow = 'hidden';
+    };
+
+    const handleCloseMobileInteract = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setIsInteractionEnabled(false);
+        onInteractionChange?.(false);
+        setMobileAltitude(null); // Return to scroll-controlled altitude
+        setSelectedPort(null);
+
+        // Re-enable body scroll
+        document.body.style.overflow = '';
+
+        // Custom Scroll Logic: Scroll to Services
+        setTimeout(() => {
+            const servicesSection = document.getElementById('services');
+            if (servicesSection) {
+                servicesSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100);
+    };
+
+    // Cleanup scroll lock on unmount
+    useEffect(() => {
+        return () => { document.body.style.overflow = ''; };
+    }, []);
 
     useEffect(() => {
         // Enable interaction by default on desktop, disable on mobile
         const checkMobile = () => {
-            setIsInteractionEnabled(window.innerWidth >= 768);
+            if (window.innerWidth >= 768) {
+                setIsInteractionEnabled(true);
+            } else {
+                setIsInteractionEnabled(false);
+            }
         };
         checkMobile();
         window.addEventListener('resize', checkMobile);
@@ -108,17 +157,20 @@ export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isP
         if (globeRef.current && globeReady) {
             const controls = globeRef.current.controls();
             if (controls) {
+                // Disable manual zoom on ALL devices to enforce Cinematic Scroll flow
                 controls.enableZoom = false;
-                // Disable auto-rotate on mobile for better performance
+
                 const isMobile = window.innerWidth < 768;
-                controls.autoRotate = !isMobile;
+                // Auto-rotate ONLY if not interacting on mobile
+                controls.autoRotate = !isMobile || (!isInteractionEnabled && !isMobile);
                 controls.autoRotateSpeed = 0.25;
                 controls.enableDamping = true;
                 controls.dampingFactor = 0.1;
             }
-            globeRef.current.pointOfView({ lat: 15, lng: 110, altitude }, 300);
+            // Use effectiveAltitude for zoom level
+            globeRef.current.pointOfView({ lat: 15, lng: 110, altitude: effectiveAltitude }, 1000);
         }
-    }, [globeReady, altitude]);
+    }, [globeReady, effectiveAltitude, isInteractionEnabled]);
 
     // Pause auto-rotate when isPaused or on mobile
     useEffect(() => {
@@ -168,17 +220,45 @@ export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isP
                 </div>
             )}
 
-            {/* Mobile "Tap to Explore" Overlay */}
+            {/* Mobile "Tap to Interact" Overlay */}
             {!isInteractionEnabled && shouldMount && (
                 <div
-                    onClick={() => setIsInteractionEnabled(true)}
-                    className="absolute inset-0 z-20 flex items-center justify-center bg-black/5 md:hidden cursor-pointer touch-pan-y"
+                    onClick={handleMobileInteract}
+                    className="absolute inset-0 z-20 flex items-center justify-center bg-black/10 md:hidden cursor-pointer touch-pan-y"
+                    style={{ touchAction: 'pan-y' }}
                 >
                     <div className="bg-secondary-900/80 backdrop-blur-md text-white px-6 py-3 rounded-full border border-white/20 shadow-xl flex items-center gap-3 animate-pulse">
                         <span className="text-xl">👆</span>
-                        <span className="font-medium text-sm">Chạm để khám phá</span>
+                        <span className="font-medium text-sm">{t('tapToInteract')}</span>
                     </div>
                 </div>
+            )}
+
+            {/* Mobile Interaction Mode UI */}
+            {isInteractionEnabled && shouldMount && (
+                <>
+                    {/* 1. Instruction Tooltip (Bottom Center) - Raised position */}
+                    <div className="absolute bottom-32 left-1/2 -translate-x-1/2 z-40 md:hidden pointer-events-none w-full px-4 text-center">
+                        <div className="inline-block bg-black/60 backdrop-blur-md text-white/90 text-xs px-4 py-2 rounded-full border border-white/10 shadow-lg animate-in fade-in slide-in-from-bottom-2 duration-700 delay-300">
+                            {t('tapHubInstruction')}
+                        </div>
+                    </div>
+
+                    {/* 2. "Continue Reading" Button (Bottom) - Raised position */}
+                    <button
+                        onClick={handleCloseMobileInteract}
+                        className="absolute bottom-16 left-1/2 -translate-x-1/2 z-50 bg-white text-secondary-900 hover:bg-white/90 font-medium text-sm px-6 py-3 rounded-full md:hidden flex items-center gap-2 shadow-xl shadow-black/20 transition-all active:scale-95 animate-in fade-in slide-in-from-bottom-4"
+                    >
+                        <span>{t('continueScrolling')}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce">
+                            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+                        </svg>
+                    </button>
+
+                    {/* 3. Close Icon (Top Right) - Optional fallback if user just wants to close without scrolling? 
+                        Keeping it removed for now to force the "Continue" flow as discussed. 
+                    */}
+                </>
             )}
 
             {/* Digital Globe with Design System Colors */}
@@ -228,8 +308,8 @@ export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isP
                         arcDashAnimateTime={1200}
                         arcStroke={1.5}
 
-                        // Labels when zoomed
-                        labelsData={isZoomComplete ? pointsData : []}
+                        // Labels when zoomed - force show on mobile interaction
+                        labelsData={isZoomComplete || (isInteractionEnabled && window.innerWidth < 768) ? pointsData : []}
                         labelLat="lat"
                         labelLng="lng"
                         labelText="name"

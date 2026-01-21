@@ -11,10 +11,13 @@ import { useTranslations } from "next-intl";
 
 // Globe stays visible for 800px of scroll, then unmounts before Services section
 const SCROLL_DISTANCE = 800;
+// Offset to pause GPU when next section covers ~1/4 screen (800 + 250px)
+const PAUSE_THRESHOLD = SCROLL_DISTANCE + 250;
 
 export function Hero() {
     const [scrollProgress, setScrollProgress] = useState(0);
     const [isMobile, setIsMobile] = useState(false);
+    const [isGlobeInteracting, setIsGlobeInteracting] = useState(false);
     const t = useTranslations("hero");
     const tCommon = useTranslations("common");
 
@@ -44,10 +47,13 @@ export function Hero() {
     }, []);
 
     // Altitude Calculation
-    const minAlt = isMobile ? 3.5 : 2.0;
+    const minAlt = isMobile ? 2.5 : 1.8; // Desktop zooms in closer (1.8) for better hub view
     const maxAlt = isMobile ? 6.0 : 4.5;
     const currentAltitude = maxAlt - (scrollProgress * (maxAlt - minAlt));
     const isZoomComplete = scrollProgress >= 0.95;
+
+    // Pause Logic: Hide when scrolled past scroll distance + buffer
+    const shouldPause = typeof window !== 'undefined' ? window.scrollY >= PAUSE_THRESHOLD : false;
 
     return (
         // Height wrapper for scrolling space
@@ -63,20 +69,25 @@ export function Hero() {
                 <div
                     className="absolute inset-0 z-10 w-screen h-screen flex items-center justify-center overflow-hidden"
                     style={{
-                        visibility: scrollProgress >= 1.25 ? 'hidden' : 'visible',
-                        pointerEvents: scrollProgress >= 1.25 ? 'none' : 'auto'
+                        visibility: shouldPause ? 'hidden' : 'visible',
+                        pointerEvents: shouldPause ? 'none' : 'auto'
                     }}
                 >
                     <GlobeVisualization
                         altitude={currentAltitude}
                         isZoomComplete={isZoomComplete}
-                        isPaused={scrollProgress >= 1.25}
+                        isPaused={shouldPause}
+                        onInteractionChange={setIsGlobeInteracting}
                     />
                 </div>
 
                 {/* 3. CONTENT OVERLAY - Pointer events controlled */}
                 {/* pointer-events-none allows clicks to pass through to globe */}
-                <div className="absolute inset-0 z-20 pointer-events-none h-full w-full">
+                {/* 3. CONTENT OVERLAY - Pointer events controlled */}
+                {/* pointer-events-none allows clicks to pass through to globe */}
+                <div
+                    className={`absolute inset-0 z-20 pointer-events-none h-full w-full transition-opacity duration-500 ${isGlobeInteracting ? 'opacity-0' : 'opacity-100'}`}
+                >
                     <Container className="h-full relative flex flex-col items-center">
 
                         {/* Header Text - Positioned higher up */}
@@ -92,8 +103,8 @@ export function Hero() {
                             </p>
                         </div>
 
-                        {/* Scroll Indicator - Center */}
-                        {!isZoomComplete && (
+                        {/* Scroll Indicator - Center - Hide on Mobile since we have Tap to Explore */}
+                        {!isZoomComplete && !isMobile && (
                             <div className="absolute top-1/2 -translate-y-1/2 flex flex-col items-center gap-3 opacity-80 animate-bounce">
                                 <p className="text-white text-sm font-medium tracking-wide drop-shadow">{t("scrollToExplore")}</p>
                                 <ChevronDown className="w-6 h-6 text-white drop-shadow" />

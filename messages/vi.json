@@ -22,7 +22,11 @@
         "title": "Kiến Tạo Tương Lai Logistics",
         "subtitle": "Cam Kết Ngay Hôm Nay",
         "scrollToExplore": "Cuộn để khám phá",
-        "clickHub": "Chọn hub trên địa cầu"
+        "clickHub": "Chọn hub trên địa cầu",
+        "tapToInteract": "Chạm để khám phá",
+        "closeInteraction": "Đóng tương tác / Tiếp tục cuộn",
+        "continueScrolling": "Tiếp tục xem",
+        "tapHubInstruction": "Chạm vào Cảng để xem thời gian vận chuyển"
     },
     "services": {
         "badge": "Năng Lực Chuyên Môn",

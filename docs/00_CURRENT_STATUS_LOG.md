@@ -1,7 +1,7 @@
 # 🔄 Project Status Update (Actual Implementation)
 
-**Date**: 2026-01-20
-**Status**: Active Development - Phase 4 (Localization & Polish)
+**Date**: 2026-01-21
+**Status**: Active Development - Phase 4 (Polish & Optimization)
 
 ## 📉 Deviations from Original Plan
 
@@ -43,21 +43,26 @@
 - [x] **Quote Page**: Completed with multi-step i18n form.
 - [x] **News Page**: Completed with mock data.
 
-### Phase 4: Localization (i18n)
+### Phase 4: Localization (i18n) & Polish
 - [x] Setup `next-intl` (Middleware, Routing).
 - [x] Translate Core Components (Navbar, Footer, Hero).
 - [x] Translate Forms (Contact, Quote).
 - [x] Translate Data-heavy Pages (Services).
 - [x] Refine Vietnamese Content (Professional Logistics Terminology).
+- [x] **Mobile Responsiveness Audit (Homepage)**:
+    - [x] Fixed Globe interaction on Mobile (Tap to explore overlay).
+    - [x] Implemented "Continue Reading" flow with Auto-scroll.
+    - [x] Optimized 3D performance (Pause mechanism).
+    - [x] Desktop Cinematic Scroll refinement (Disabled wheel zoom, enforced scroll flow).
 
 ## 🛠 Updated Tech Reference
 - **Frontend**: Next.js 14, TypeScript.
 - **Styling**: Tailwind + Modules/Custom CSS.
-- **3D**: React Three Fiber compatibility verified.
+- **3D**: React Three Fiber (Optimized with visibility toggles).
 - **i18n**: next-intl with structural JSON messages.
 - **Assets**: Stored in `public/assets`.
 
 ## ⏭ Next Priority
-1.  **Mobile Responsiveness Audit**: Rigorous testing on mobile sizes.
+1.  **Mobile Audit (Remaining Pages)**: Check Services, Contact, Quote on mobile.
 2.  **Backend Integration**: Connect forms to API.
 3.  **Deploy**: Staging deployment for client review.

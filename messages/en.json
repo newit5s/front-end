@@ -22,7 +22,11 @@
         "title": "Shipping The Future",
         "subtitle": "Delivering Today",
         "scrollToExplore": "Scroll to explore",
-        "clickHub": "Click hubs on globe"
+        "clickHub": "Click hubs on globe",
+        "tapToInteract": "Tap to explore",
+        "closeInteraction": "Close interaction / Continue scrolling",
+        "continueScrolling": "Continue Reading",
+        "tapHubInstruction": "Tap on Port to view transit time"
     },
     "services": {
         "badge": "Our Expertise",

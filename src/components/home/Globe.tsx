@@ -52,12 +52,27 @@ export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isP
     const globeRef = useRef<any>(null);
     const [globeReady, setGlobeReady] = useState(false);
     const [shouldMount, setShouldMount] = useState(false);
+    const [webGLSupported, setWebGLSupported] = useState(true);
     const [selectedPort, setSelectedPort] = useState<Port | null>(null);
     const [hoveredPort, setHoveredPort] = useState<string | null>(null);
     const [countries, setCountries] = useState<any>({ features: [] });
 
+    // Check WebGL support on client side
+    useEffect(() => {
+        try {
+            const canvas = document.createElement('canvas');
+            const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+            if (!gl) {
+                setWebGLSupported(false);
+            }
+        } catch (e) {
+            setWebGLSupported(false);
+        }
+    }, []);
+
     // Load countries GeoJSON
     useEffect(() => {
+        if (!webGLSupported) return;
         fetch('https://unpkg.com/world-atlas@2.0.2/countries-110m.json')
             .then(res => res.json())
             .then(data => {
@@ -67,13 +82,14 @@ export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isP
                 });
             })
             .catch(() => setCountries({ features: [] }));
-    }, []);
+    }, [webGLSupported]);
 
     // Defer Globe mount
     useEffect(() => {
+        if (!webGLSupported) return;
         const timer = setTimeout(() => setShouldMount(true), 150);
         return () => clearTimeout(timer);
-    }, []);
+    }, [webGLSupported]);
 
     // Camera Control - Optimized for mobile
     useEffect(() => {

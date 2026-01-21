@@ -116,8 +116,10 @@ export default function ServicesPage() {
                                                         {tPage("getQuote")} <ArrowRight className="ml-2 h-4 w-4" />
                                                     </Button>
                                                 </I18nLink>
-                                                <I18nLink href={`/services/${service.id}`} className="ml-4 text-primary-600 hover:underline">
-                                                    {t("value-added.details") || "Details"}
+                                                <I18nLink href={`/services/${service.id}`} className="ml-4">
+                                                    <Button variant="outline" size="lg">
+                                                        {tPage("viewDetails")}
+                                                    </Button>
                                                 </I18nLink>
                                             </div>
                                         </div>
@@ -138,7 +140,7 @@ export default function ServicesPage() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <I18nLink href="/contact">
-                                    <Button size="lg" variant="primary">{t("cta.contactSales", { defaultMessage: "Contact Sales" })}</Button>
+                                    <Button size="lg" variant="primary">{tPage("contactSales")}</Button>
                                 </I18nLink>
                                 <Button size="lg" variant="outline">{tPage("viewCaseStudies")}</Button>
                             </div>

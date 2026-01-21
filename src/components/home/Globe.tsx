@@ -56,6 +56,18 @@ export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isP
     const [selectedPort, setSelectedPort] = useState<Port | null>(null);
     const [hoveredPort, setHoveredPort] = useState<string | null>(null);
     const [countries, setCountries] = useState<any>({ features: [] });
+    // Interaction Control (Mobile Scroll Trap Prevention)
+    const [isInteractionEnabled, setIsInteractionEnabled] = useState(false);
+
+    useEffect(() => {
+        // Enable interaction by default on desktop, disable on mobile
+        const checkMobile = () => {
+            setIsInteractionEnabled(window.innerWidth >= 768);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     // Check WebGL support on client side
     useEffect(() => {
@@ -146,73 +158,89 @@ export function GlobeVisualization({ altitude = 2.5, isZoomComplete = false, isP
         color: port.isHQ ? COLORS.accent : (selectedPort?.id === port.id ? COLORS.accent : COLORS.secondary),
     })), [selectedPort]);
 
+
     return (
-        <div className={`w-full h-full ${hoveredPort ? 'cursor-pointer' : 'cursor-default'}`}>
+        <div className={`w-full h-full relative group ${hoveredPort ? 'cursor-pointer' : 'cursor-default'}`}>
             {/* Loading Placeholder */}
             {(!shouldMount || !globeReady) && (
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
                     <div className="w-64 h-64 md:w-96 md:h-96 rounded-full border-2 border-primary-500/40 bg-gradient-to-br from-secondary-900/30 via-secondary-600/20 to-transparent animate-pulse shadow-[0_0_60px_rgba(30,74,122,0.3)]" />
+                </div>
+            )}
+
+            {/* Mobile "Tap to Explore" Overlay */}
+            {!isInteractionEnabled && shouldMount && (
+                <div
+                    onClick={() => setIsInteractionEnabled(true)}
+                    className="absolute inset-0 z-20 flex items-center justify-center bg-black/5 md:hidden cursor-pointer touch-pan-y"
+                >
+                    <div className="bg-secondary-900/80 backdrop-blur-md text-white px-6 py-3 rounded-full border border-white/20 shadow-xl flex items-center gap-3 animate-pulse">
+                        <span className="text-xl">👆</span>
+                        <span className="font-medium text-sm">Chạm để khám phá</span>
+                    </div>
                 </div>
             )}
 
             {/* Digital Globe with Design System Colors */}
             {shouldMount && (
-                <Globe
-                    ref={globeRef}
-                    onGlobeReady={() => setGlobeReady(true)}
+                <div className={`w-full h-full transition-opacity duration-500 ${!isInteractionEnabled ? 'pointer-events-none' : 'pointer-events-auto'}`}>
+                    <Globe
+                        ref={globeRef}
+                        onGlobeReady={() => setGlobeReady(true)}
 
-                    // 2K texture - balanced quality and file size (~300KB)
-                    globeImageUrl="//unpkg.com/three-globe@2.31.0/example/img/earth-night.jpg"
-                    backgroundColor="rgba(0,0,0,0)"
+                        // 2K texture - balanced quality and file size (~300KB)
+                        globeImageUrl="//unpkg.com/three-globe@2.31.0/example/img/earth-night.jpg"
+                        backgroundColor="rgba(0,0,0,0)"
 
-                    // Secondary (navy blue) atmosphere glow
-                    showAtmosphere={true}
-                    atmosphereColor={COLORS.secondary}
-                    atmosphereAltitude={0.22}
+                        // Secondary (navy blue) atmosphere glow
+                        showAtmosphere={true}
+                        atmosphereColor={COLORS.secondary}
+                        atmosphereAltitude={0.22}
 
-                    // Country polygons with brand colors
-                    polygonsData={countries.features}
-                    polygonCapColor={() => "rgba(30, 74, 122, 0.08)"}      // secondary with transparency
-                    polygonSideColor={() => "rgba(160, 98, 79, 0.12)"}     // primary with transparency
-                    polygonStrokeColor={() => COLORS.secondary}            // secondary for borders
-                    polygonAltitude={0.006}
+                        // Country polygons with brand colors
+                        polygonsData={countries.features}
+                        polygonCapColor={() => "rgba(30, 74, 122, 0.08)"}      // secondary with transparency
+                        polygonSideColor={() => "rgba(160, 98, 79, 0.12)"}     // primary with transparency
+                        polygonStrokeColor={() => COLORS.secondary}            // secondary for borders
+                        polygonAltitude={0.006}
 
-                    // Points for ports
-                    pointsData={pointsData}
-                    pointLat="lat"
-                    pointLng="lng"
-                    pointColor="color"
-                    pointAltitude={0.025}
-                    pointRadius="size"
-                    onPointClick={handleClick}
-                    onPointHover={(point: any) => setHoveredPort(point ? point.id : null)}
+                        // Points for ports
+                        pointsData={pointsData}
+                        pointLat="lat"
+                        pointLng="lng"
+                        pointColor="color"
+                        pointAltitude={0.025}
+                        pointRadius="size"
+                        onPointClick={handleClick}
+                        onPointHover={(point: any) => setHoveredPort(point ? point.id : null)}
 
-                    pointLabel={(d: any) => `
-                        <div style="background: ${COLORS.secondary}; padding:8px 14px; border-radius:12px; border:1px solid rgba(255,255,255,0.3); backdrop-filter:blur(12px); font-family: system-ui, sans-serif; pointer-events: none; box-shadow: 0 0 20px rgba(30,74,122,0.4), 0 4px 15px rgba(0,0,0,0.2);">
-                            <div style="font-weight:700; color:white; font-size:13px;">${d.isHQ ? "📍 " : ""}${d.name}</div>
-                        </div>
-                    `}
+                        pointLabel={(d: any) => `
+                            <div style="background: ${COLORS.secondary}; padding:8px 14px; border-radius:12px; border:1px solid rgba(255,255,255,0.3); backdrop-filter:blur(12px); font-family: system-ui, sans-serif; pointer-events: none; box-shadow: 0 0 20px rgba(30,74,122,0.4), 0 4px 15px rgba(0,0,0,0.2);">
+                                <div style="font-weight:700; color:white; font-size:13px;">${d.isHQ ? "📍 " : ""}${d.name}</div>
+                            </div>
+                        `}
 
-                    // Arcs with accent gradient
-                    arcsData={arcsData}
-                    arcColor="color"
-                    arcDashLength={0.5}
-                    arcDashGap={0.15}
-                    arcDashAnimateTime={1200}
-                    arcStroke={1.5}
+                        // Arcs with accent gradient
+                        arcsData={arcsData}
+                        arcColor="color"
+                        arcDashLength={0.5}
+                        arcDashGap={0.15}
+                        arcDashAnimateTime={1200}
+                        arcStroke={1.5}
 
-                    // Labels when zoomed
-                    labelsData={isZoomComplete ? pointsData : []}
-                    labelLat="lat"
-                    labelLng="lng"
-                    labelText="name"
-                    labelSize={1.3}
-                    labelDotRadius={0.35}
-                    labelColor={() => "rgba(255,255,255,0.95)"}
-                    labelResolution={2}
-                    labelAltitude={0.03}
-                    onLabelClick={handleClick}
-                />
+                        // Labels when zoomed
+                        labelsData={isZoomComplete ? pointsData : []}
+                        labelLat="lat"
+                        labelLng="lng"
+                        labelText="name"
+                        labelSize={1.3}
+                        labelDotRadius={0.35}
+                        labelColor={() => "rgba(255,255,255,0.95)"}
+                        labelResolution={2}
+                        labelAltitude={0.03}
+                        onLabelClick={handleClick}
+                    />
+                </div>
             )}
 
             {/* Selected Port Info Card - Using brand colors */}

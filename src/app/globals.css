@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  /* Brand Colors */
+  --color-primary-50: #FAF5F3;
+  --color-primary-100: #F5EBE7;
+  --color-primary-500: #A0624F;
+  --color-primary-600: #8B5646;
+  --color-primary-900: #4C322B;
+
+  --color-secondary-50: #EFF6FB;
+  --color-secondary-500: #1E4A7A;
+  --color-secondary-600: #1A3F68;
+  --color-secondary-900: #0E1E32;
+
+  --color-accent-50: #FEF6F0;
+  --color-accent-500: #F4A261;
+  --color-accent-600: #D68A51;
+
+  /* Neutral */
+  --color-gray-50: #F8F9FA;
+  --color-gray-500: #6C757D;
+  --color-gray-900: #343A40;
+
+  /* Fonts */
+  --font-heading: var(--font-poppins), var(--font-be-vietnam-pro), sans-serif;
+  --font-body: var(--font-inter), var(--font-be-vietnam-pro), sans-serif;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  /* Mappings to Tailwind utilities */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    /* --foreground: #ededed; */
+    /* Keeping light mode for now as strict requirement wasn't detailed for dark mode fully */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+@layer utilities {
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+}

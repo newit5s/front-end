@@ -1,0 +1,294 @@
+{
+    "common": {
+        "getQuote": "获取报价",
+        "trackShipment": "追踪货物",
+        "learnMore": "了解更多",
+        "contactUs": "联系我们",
+        "submit": "提交",
+        "cancel": "取消",
+        "loading": "加载中...",
+        "switchLanguage": "切换语言"
+    },
+    "nav": {
+        "home": "首页",
+        "services": "服务",
+        "about": "关于我们",
+        "contact": "联系",
+        "tracking": "追踪",
+        "quote": "报价",
+        "news": "新闻"
+    },
+    "hero": {
+        "title": "运送未来",
+        "subtitle": "今日送达",
+        "scrollToExplore": "滚动探索",
+        "clickHub": "点击地球上的枢纽"
+    },
+    "services": {
+        "badge": "我们的专长",
+        "title": "物流无界限",
+        "description": "我们精准协调复杂的供应链，将人类专业知识与先进技术相结合。",
+        "seaFreight": "海运",
+        "seaFreightDesc": "大宗国际贸易的高性价比集装箱解决方案。",
+        "airFreight": "空运",
+        "airFreightDesc": "为紧急货物提供快速可靠的空运服务。",
+        "inlandTrucking": "内陆运输",
+        "inlandTruckingDesc": "根据您的时间表提供无缝的国内配送。",
+        "projectCargo": "项目货物",
+        "projectCargoDesc": "针对复杂、超大和重型货物的专业处理。",
+        "customsBrokerage": "报关代理",
+        "customsBrokerageDesc": "持牌报关行 (No. 969/QĐ-TCHQ)，熟练应对复杂法规。",
+        "valueAdded": "增值服务",
+        "valueAddedDesc": "货物保险和专业的私人物品处理。",
+        "details": "详情"
+    },
+    "whyChooseUs": {
+        "badge": "为什么选择 Seaair",
+        "title": "我们运送的不仅是货物，更是卓越",
+        "description": "凭借二十多年的经验，我们建立了可靠、高效和以客户为中心的声誉。我们全力以赴优化您的供应链。",
+        "globalNetwork": "全球网络",
+        "globalNetworkDesc": "遍布 80 多个国家的广泛合作伙伴关系，确保持顺畅的国际物流。",
+        "onTimeDelivery": "准时交付",
+        "onTimeDeliveryDesc": "先进的追踪系统和优化的路线，确保您的货物按时到达。",
+        "secureInsured": "安全与保险",
+        "secureInsuredDesc": "全面的货物保险和安全协议，让您高枕无忧。",
+        "support247": "24/7 支持",
+        "support247Desc": "敬业的支持团队全天候为您解答任何疑问。",
+        "costEfficient": "成本效益",
+        "costEfficientDesc": "具有竞争力的费率和优化的物流方案，降低您的运输成本。",
+        "industryCertified": "行业认证",
+        "industryCertifiedDesc": "获得主要国际物流协会的完全许可和认证。",
+        "trustDelivered": "信任已送达。",
+        "everyShipment": "每一次运输。",
+        "onTimeRate": "准时交付率"
+    },
+    "stats": {
+        "yearsExperience": "年 经验",
+        "globalPartners": "全球合作伙伴",
+        "countriesServed": "服务国家",
+        "happyClients": "满意的客户"
+    },
+    "cta": {
+        "titleRegular": "准备好优化您的",
+        "titleHighlight": "全球物流了吗？",
+        "description": "体验为您的业务需求量身定制的世界级运输解决方案。立即获取报价，感受不同。",
+        "getQuote": "获取免费报价",
+        "contactSales": "联系销售"
+    },
+    "footer": {
+        "tagline": "运送未来，今日送达。我们以高效和可靠连接全球业务。",
+        "quickLinks": "快速链接",
+        "aboutUs": "关于我们",
+        "ourServices": "我们的服务",
+        "trackShipment": "追踪货物",
+        "requestQuote": "请求报价",
+        "contactSupport": "联系支持",
+        "contactUs": "联系我们",
+        "newsletter": "通讯",
+        "newsletterDesc": "订阅我们的通讯，获取最新的航运新闻和更新。",
+        "subscribe": "订阅",
+        "emailPlaceholder": "输入您的邮箱",
+        "privacyPolicy": "隐私政策",
+        "termsOfService": "服务条款",
+        "allRightsReserved": "版权所有。"
+    },
+    "quote": {
+        "title": "请求报价",
+        "subtitle": "在24小时内获取为您量身定制的物流运输报价。",
+        "selectService": "选择服务",
+        "shipmentDetails": "货物详情",
+        "contactInfo": "联系信息",
+        "origin": "始发城市/港口",
+        "destination": "目的城市/港口",
+        "incoterms": "国际贸易术语",
+        "grossWeight": "总重量 (kg)",
+        "fullName": "全名",
+        "email": "邮箱地址",
+        "phone": "电话",
+        "additionalDetails": "附加详情",
+        "describeRequest": "描述您的请求",
+        "otherServiceNote": "请在下方详细描述您的特殊要求。我们的团队将联系您讨论最佳解决方案。",
+        "otherPlaceholder": "详细描述您的请求：货物类型、要求、时间表等...",
+        "detailsPlaceholder": "描述您的货物、尺寸、特殊处理要求...",
+        "requestQuote": "提交报价请求",
+        "change": "更改",
+        "selectedService": "已选服务",
+        "otherSpecial": "其他 / 特殊请求"
+    },
+    "tracking": {
+        "title": "追踪货物",
+        "subtitle": "实时监控您的货物",
+        "placeholder": "输入追踪号码",
+        "search": "搜索",
+        "notFound": "未找到货物",
+        "tryAgain": "请检查追踪号码并重试"
+    },
+    "contactPage": {
+        "title": "联系我们",
+        "subtitle": "全球覆盖，本地专长。立即联系我们的物流专家。",
+        "getInTouch": "取得联系",
+        "intro": "无论您是想咨询运费，需要协助当前货运，还是想讨论长期合作，我们都乐意为您效劳。",
+        "headOffice": "总部",
+        "callUs": "致电我们",
+        "emailUs": "发送邮件",
+        "workingHours": "工作时间",
+        "sendMessage": "发送消息",
+        "subject": "主题",
+        "message": "内容",
+        "send": "发送消息",
+        "successTitle": "消息已发送！",
+        "successDesc": "感谢您的联系。我们的团队将尽快给您回复。",
+        "sendAnother": "发送另一条消息"
+    },
+    "servicesPage": {
+        "heroBadge": "全球物流解决方案",
+        "heroTitleRegular": "全面",
+        "heroTitleGradient": "服务",
+        "heroDescription": "为您的具体业务需求量身定制的端到端供应链管理。从空运到海运，我们涵盖一切。",
+        "getQuote": "获取报价",
+        "customSolutionTitle": "需要定制解决方案？",
+        "customSolutionDesc": "我们的物流专家随时准备设计符合您独特业务需求的供应链策略。",
+        "viewCaseStudies": "查看案例研究",
+        "backToServices": "返回服务",
+        "serviceOverview": "服务概览",
+        "keyCapabilities": "关键能力",
+        "whyChoose": "为什么选择我们的{service}？",
+        "requestQuoteCardTitle": "请求报价",
+        "requestQuoteCardDesc": "需要定制的运输解决方案？请填写我们的表格以获取快速估算。",
+        "getQuoteNow": "立即获取报价",
+        "contactExpert": "联系专家",
+        "contactExpertDesc": "对此服务有疑问？请联系我们的专职团队。",
+        "otherServices": "其他服务",
+        "readyToStart": "准备好开始了吗？",
+        "readyDesc": "让我们处理物流，以便您可以专注于您的业务。",
+        "talkToExpert": "咨询专家"
+    },
+    "servicesData": {
+        "sea-freight": {
+            "title": "海运",
+            "shortDescription": "大宗国际贸易的高性价比集装箱运输解决方案。",
+            "fullDescription": "作为大宗货运的高性价比解决方案，我们的海运服务将您与全球主要港口连接起来。我们提供整箱 (FCL) 和拼箱 (LCL) 选项，无论您的货物规模如何，都能为您提供灵活性。我们与船公司的牢固关系确保了即使在旺季也能获得舱位和极具竞争力的价格。",
+            "features": [
+                "FCL (整箱)",
+                "LCL (拼箱)",
+                "冷藏/温控集装箱",
+                "散杂货 & 滚装服务",
+                "港到港 & 门到门"
+            ],
+            "benefits": [
+                "大宗货物最经济的选择",
+                "适合非紧急货物",
+                "能够处理超大/重型货物",
+                "环保选项"
+            ]
+        },
+        "air-freight": {
+            "title": "空运",
+            "shortDescription": "为您的全球紧急货物提供快速可靠的空运服务。",
+            "fullDescription": "当时间至关重要时，我们的空运服务为您提供所需的速度和可靠性。我们与主要商业航空公司和货运航空公司合作，提供灵活的路线和有竞争力的价格。无论是紧急的小包裹还是超大货物，我们都以精确和谨慎的态度处理，确保您的货物安全、准时到达目的地。",
+            "features": [
+                "快递/优先空运",
+                "拼货服务",
+                "门到门交付",
+                "项目货物包机服务",
+                "危险品处理"
+            ],
+            "benefits": [
+                "紧急货物最快运输时间",
+                "高安全性，低损坏风险",
+                "实时全球追踪可视性",
+                "可靠的出发和到达时刻表"
+            ]
+        },
+        "road-transport": {
+            "title": "内陆运输",
+            "shortDescription": "根据您的时间表量身定制的无缝国内配送。",
+            "fullDescription": "根据您的时间表量身定制的无缝国内配送。我们提供快递、标准和定期交付选项，具有灵活的提货和温控能力。",
+            "features": [
+                "门到门 & 港到港",
+                "灵活提货选项",
+                "温控运输",
+                "快递 & 定期选项",
+                "实时追踪"
+            ],
+            "benefits": [
+                "门到门服务灵活性",
+                "中短距离具有成本效益",
+                "灵活的出发时刻表",
+                "车辆实时追踪"
+            ]
+        },
+        "project-cargo": {
+            "title": "项目货物",
+            "shortDescription": "复杂、超大和重型货物的专业处理。",
+            "fullDescription": "我们的项目货物团队为复杂、超大和重型货物提供专业处理。我们管理复杂物流项目的每一个方面，从路线可行性研究和许可证获取到专业装载设备和实时风险管理，确保及时安全交付。",
+            "features": [
+                "超大货物处理 & 许可证",
+                "重型运输",
+                "定制路线规划",
+                "实时风险管理",
+                "专职项目协调员"
+            ],
+            "benefits": [
+                "端到端项目管理",
+                "获取专业设备",
+                "专业处理许可证和法规",
+                "最小化供应链中断"
+            ]
+        },
+        "customs-brokerage": {
+            "title": "报关代理",
+            "shortDescription": "持牌报关行 (Ref 969/QĐ-TCHQ) 应对复杂法规。",
+            "fullDescription": "作为持牌报关行 (Ref No. 969/QĐ-TCHQ)，我们的团队确保您的货物符合所有当地和国际法律，防止延误和罚款。我们处理所有文件、关税计算和申报流程，促进您的进出口顺利通关。",
+            "features": [
+                "进出口申报",
+                "关税和税款计算",
+                "HS 编码归类",
+                "许可证申请",
+                "自由贸易协定 (FTA) 咨询"
+            ],
+            "benefits": [
+                "防止昂贵的延误/罚款",
+                "遵守最新法规",
+                "准确的关税/税款评估",
+                "快速货物放行"
+            ]
+        },
+        "value-added": {
+            "title": "增值服务",
+            "shortDescription": "货物保险和专业的私人物品处理。",
+            "fullDescription": "超越运输。我们提供货物保险和专业的私人物品处理，确保完全安心。从专业包装到文件支持，我们照顾最重要的细节。",
+            "features": [
+                "货物保险服务",
+                "私人物品处理",
+                "安全处理",
+                "专业包装",
+                "文件支持"
+            ],
+            "benefits": [
+                "全面保险覆盖",
+                "个性化服务",
+                "全面货物保护",
+                "敏感物品专业处理"
+            ]
+        },
+        "solution-consulting": {
+            "title": "方案咨询",
+            "shortDescription": "量身定制的供应链策略，以优化效率并降低成本。",
+            "fullDescription": "每个企业都有独特的物流挑战。我们的方案咨询服务分析您当前的供应链，以识别效率低下和改进机会。我们设计量身定制的策略，从而节省成本，提高上市速度，并增强业务增长的可扩展性。",
+            "features": [
+                "供应链分析",
+                "网络优化",
+                "成本降低策略",
+                "风险管理",
+                "可持续性解决方案"
+            ],
+            "benefits": [
+                "优化物流总成本",
+                "提高运营效率",
+                "可扩展的增长流程",
+                "通过可靠性提高客户满意度"
+            ]
+        }
+    }
+}

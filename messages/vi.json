@@ -1,0 +1,294 @@
+{
+    "common": {
+        "getQuote": "Nhận Báo Giá",
+        "trackShipment": "Tra Cứu Vận Đơn",
+        "learnMore": "Tìm Hiểu Thêm",
+        "contactUs": "Liên Hệ Ngay",
+        "submit": "Gửi Đi",
+        "cancel": "Hủy Bỏ",
+        "loading": "Đang tải...",
+        "switchLanguage": "Đổi ngôn ngữ"
+    },
+    "nav": {
+        "home": "Trang Chủ",
+        "services": "Dịch Vụ",
+        "about": "Về Chúng Tôi",
+        "contact": "Liên Hệ",
+        "tracking": "Theo Dõi",
+        "quote": "Báo Giá",
+        "news": "Tin Tức"
+    },
+    "hero": {
+        "title": "Kiến Tạo Tương Lai Logistics",
+        "subtitle": "Cam Kết Ngay Hôm Nay",
+        "scrollToExplore": "Cuộn để khám phá",
+        "clickHub": "Chọn hub trên địa cầu"
+    },
+    "services": {
+        "badge": "Năng Lực Chuyên Môn",
+        "title": "Logistics Không Giới Hạn",
+        "description": "Chúng tôi điều phối chuỗi cung ứng phức tạp với độ chính xác tuyệt đối, kết hợp kinh nghiệm chuyên sâu và công nghệ tiên tiến.",
+        "seaFreight": "Vận Tải Đường Biển",
+        "seaFreightDesc": "Giải pháp container tối ưu chi phí cho các luồng hàng quốc tế lớn.",
+        "airFreight": "Vận Tải Hàng Không",
+        "airFreightDesc": "Tốc độ và tin cậy, dành cho những lô hàng cần thời gian gấp rút.",
+        "inlandTrucking": "Vận Tải Nội Địa",
+        "inlandTruckingDesc": "Giao nhận nội địa liền mạch, linh hoạt theo kế hoạch của bạn.",
+        "projectCargo": "Hàng Dự Án",
+        "projectCargoDesc": "Quy trình chuyên biệt cho hàng siêu trường, siêu trọng và phức tạp.",
+        "customsBrokerage": "Khai Thuê Hải Quan",
+        "customsBrokerageDesc": "Đại lý được cấp phép (Số 969/QĐ-TCHQ), am hiểu mọi quy định pháp lý.",
+        "valueAdded": "Dịch Vụ Gia Tăng",
+        "valueAddedDesc": "Bảo hiểm hàng hóa toàn diện và xử lý hàng cá nhân chuyên nghiệp.",
+        "details": "Chi Tiết"
+    },
+    "whyChooseUs": {
+        "badge": "Tại Sao Chọn Seaair",
+        "title": "Đồng Hành Cùng Sự Xuất Sắc",
+        "description": "Với hơn 20 năm kinh nghiệm, chúng tôi khẳng định uy tín bằng sự tin cậy, hiệu quả và tận tâm. Seaair Global luôn nỗ lực tối ưu hóa chuỗi cung ứng của bạn.",
+        "globalNetwork": "Mạng Lưới Toàn Cầu",
+        "globalNetworkDesc": "Đối tác chiến lược tại hơn 80 quốc gia, đảm bảo vận hành quốc tế thông suốt.",
+        "onTimeDelivery": "Giao Hàng Đúng Hạn",
+        "onTimeDeliveryDesc": "Hệ thống theo dõi tân tiến và lộ trình tối ưu giúp hàng hóa luôn đúng lịch trình.",
+        "secureInsured": "An Toàn & Bảo Hiểm",
+        "secureInsuredDesc": "Bảo hiểm hàng hóa toàn diện cùng quy trình an ninh nghiêm ngặt.",
+        "support247": "Hỗ Trợ 24/7",
+        "support247Desc": "Đội ngũ chuyên viên sẵn sàng giải đáp mọi thắc mắc bất kể thời gian.",
+        "costEfficient": "Tối Ưu Chi Phí",
+        "costEfficientDesc": "Giá cước cạnh tranh đi kèm giải pháp logistics tinh gọn để tiết kiệm ngân sách.",
+        "industryCertified": "Chứng Nhận Quốc Tế",
+        "industryCertifiedDesc": "Được cấp phép và chứng nhận bởi các hiệp hội logistics uy tín toàn cầu.",
+        "trustDelivered": "Trao Niềm Tin.",
+        "everyShipment": "Vẹn Tròn Mọi Chuyến Hàng.",
+        "onTimeRate": "Tỷ Lệ Đúng Hạn"
+    },
+    "stats": {
+        "yearsExperience": "Năm Kinh Nghiệm",
+        "globalPartners": "Đối Tác Toàn Cầu",
+        "countriesServed": "Quốc Gia Phục Vụ",
+        "happyClients": "Khách Hàng Hài Lòng"
+    },
+    "cta": {
+        "titleRegular": "Sẵn Sàng Tối Ưu Hóa",
+        "titleHighlight": "Logistics Toàn Cầu?",
+        "description": "Trải nghiệm giải pháp vận chuyển đẳng cấp thế giới được thiết kế riêng cho doanh nghiệp của bạn. Nhận báo giá ngay hôm nay.",
+        "getQuote": "Nhận Báo Giá Miễn Phí",
+        "contactSales": "Liên Hệ Kinh Doanh"
+    },
+    "footer": {
+        "tagline": "Kiến Tạo Tương Lai, Cam Kết Hôm Nay. Kết nối doanh nghiệp toàn cầu bằng hiệu quả và sự tin cậy.",
+        "quickLinks": "Liên Kết Nhanh",
+        "aboutUs": "Về Chúng Tôi",
+        "ourServices": "Dịch Vụ Của Chúng Tôi",
+        "trackShipment": "Tra Cứu Vận Đơn",
+        "requestQuote": "Yêu Cầu Báo Giá",
+        "contactSupport": "Hỗ Trợ Khách Hàng",
+        "contactUs": "Liên Hệ",
+        "newsletter": "Bản Tin",
+        "newsletterDesc": "Đăng ký nhận tin tức mới nhất về thị trường logistics và vận tải.",
+        "subscribe": "Đăng Ký",
+        "emailPlaceholder": "Nhập email của bạn...",
+        "privacyPolicy": "Chính Sách Bảo Mật",
+        "termsOfService": "Điều Khoản Sử Dụng",
+        "allRightsReserved": "Đã đăng ký bản quyền."
+    },
+    "quote": {
+        "title": "Yêu Cầu Báo Giá",
+        "subtitle": "Nhận báo giá cạnh tranh, thiết kế riêng cho nhu cầu của bạn trong vòng 24h.",
+        "selectService": "Chọn Dịch Vụ",
+        "shipmentDetails": "Chi Tiết Lô Hàng",
+        "contactInfo": "Thông Tin Liên Hệ",
+        "origin": "Thành phố/Cảng Đi",
+        "destination": "Thành phố/Cảng Đến",
+        "incoterms": "Điều Kiện (Incoterms)",
+        "grossWeight": "Tổng Trọng Lượng (kg)",
+        "fullName": "Họ và Tên",
+        "email": "Địa Chỉ Email",
+        "phone": "Số Điện Thoại",
+        "additionalDetails": "Thông Tin Bổ Sung",
+        "describeRequest": "Mô Tả Yêu Cầu",
+        "otherServiceNote": "Vui lòng mô tả chi tiết yêu cầu đặc biệt của bạn. Chuyên viên của chúng tôi sẽ liên hệ tư vấn giải pháp phù hợp nhất.",
+        "otherPlaceholder": "Chi tiết yêu cầu: loại hàng, quy cách, thời gian mong muốn...",
+        "detailsPlaceholder": "Mô tả tên hàng, kích thước, các lưu ý đặc biệt khi xử lý...",
+        "requestQuote": "Gửi Yêu Cầu Báo Giá",
+        "change": "Thay Đổi",
+        "selectedService": "Dịch Vụ Đã Chọn",
+        "otherSpecial": "Khác / Yêu Cầu Đặc Biệt"
+    },
+    "tracking": {
+        "title": "Tra Cứu Vận Đơn",
+        "subtitle": "Theo dõi hàng hóa theo thời gian thực",
+        "placeholder": "Nhập Mã Vận Đơn",
+        "search": "Tra Cứu",
+        "notFound": "Không tìm thấy lô hàng",
+        "tryAgain": "Vui lòng kiểm tra lại mã vận đơn và thử lại"
+    },
+    "contactPage": {
+        "title": "Liên Hệ",
+        "subtitle": "Vươn Tầm Thế Giới, Am Hiểu Địa Phương. Kết nối ngay với đội ngũ chuyên gia logistics của chúng tôi.",
+        "getInTouch": "Kết Nối Ngay",
+        "intro": "Dù bạn cần tư vấn cước phí, hỗ trợ lô hàng hiện tại hay thảo luận hợp tác chiến lược, chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ.",
+        "headOffice": "Trụ Sở Chính",
+        "callUs": "Tổng Đài Hỗ Trợ",
+        "emailUs": "Gửi Email",
+        "workingHours": "Giờ Làm Việc",
+        "sendMessage": "Gửi Tin Nhắn",
+        "subject": "Tiêu Đề",
+        "message": "Nội Dung Tin Nhắn",
+        "send": "Gửi Tin Nhắn",
+        "successTitle": "Gửi Thành Công!",
+        "successDesc": "Cảm ơn bạn đã liên hệ. Đội ngũ của Seaair Global sẽ phản hồi trong thời gian sớm nhất.",
+        "sendAnother": "Gửi Tin Nhắn Khác"
+    },
+    "servicesPage": {
+        "heroBadge": "Giải Pháp Logistics Toàn Cầu",
+        "heroTitleRegular": "Dịch Vụ",
+        "heroTitleGradient": "Toàn Diện",
+        "heroDescription": "Quản lý chuỗi cung ứng đầu cuối được thiết kế riêng cho nhu cầu doanh nghiệp của bạn. Từ đường không đến đường biển, chúng tôi bao phủ tất cả.",
+        "getQuote": "Nhận Báo Giá",
+        "customSolutionTitle": "Cần Giải Pháp Tùy Chỉnh?",
+        "customSolutionDesc": "Các chuyên gia logistics của chúng tôi sẵn sàng thiết kế chiến lược chuỗi cung ứng phù hợp với yêu cầu riêng biệt của bạn.",
+        "viewCaseStudies": "Xem Case Studies",
+        "backToServices": "Quay Lại Dịch Vụ",
+        "serviceOverview": "Tổng Quan Dịch Vụ",
+        "keyCapabilities": "Năng Lực Cốt Lõi",
+        "whyChoose": "Tại Sao Chọn {service} Của Chúng Tôi?",
+        "requestQuoteCardTitle": "Yêu Cầu Báo Giá",
+        "requestQuoteCardDesc": "Cần giải pháp vận chuyển tùy chỉnh? Điền vào form để nhận ước tính nhanh.",
+        "getQuoteNow": "Nhận Báo Giá Ngay",
+        "contactExpert": "Liên Hệ Chuyên Gia",
+        "contactExpertDesc": "Có câu hỏi về dịch vụ này? Liên hệ với đội ngũ chuyên trách của chúng tôi.",
+        "otherServices": "Dịch Vụ Khác",
+        "readyToStart": "Sẵn sàng bắt đầu?",
+        "readyDesc": "Hãy để chúng tôi lo liệu logistics để bạn tập trung vào kinh doanh.",
+        "talkToExpert": "Trao Đổi Với Chuyên Gia"
+    },
+    "servicesData": {
+        "sea-freight": {
+            "title": "Vận Tải Đường Biển",
+            "shortDescription": "Giải pháp vận chuyển container tối ưu chi phí cho thương mại quốc tế khối lượng lớn.",
+            "fullDescription": "Là giải pháp tối ưu chi phí cho khối lượng hàng lớn, dịch vụ Vận Tải Đường Biển của chúng tôi kết nối bạn với các cảng lớn trên toàn cầu. Chúng tôi cung cấp các tùy chọn FCL (Nguyên Container) và LCL (Hàng Lẻ), mang lại sự linh hoạt bất kể quy mô lô hàng của bạn. Mối quan hệ bền chặt với các hãng tàu đảm bảo khả năng giữ chỗ và giá cước cạnh tranh ngay cả trong mùa cao điểm.",
+            "features": [
+                "FCL (Nguyên Container)",
+                "LCL (Hàng Lẻ)",
+                "Container Lạnh / Kiểm Soát Nhiệt Độ",
+                "Hàng Rời & RORO",
+                "Cảng-Cảng & Cửa-Cửa"
+            ],
+            "benefits": [
+                "Kinh tế nhất cho khối lượng lớn",
+                "Phù hợp cho hàng hóa không gấp",
+                "Xử lý tốt hàng quá khổ/siêu trọng",
+                "Lựa chọn thân thiện với môi trường"
+            ]
+        },
+        "air-freight": {
+            "title": "Vận Tải Hàng Không",
+            "shortDescription": "Dịch vụ hàng không nhanh chóng và tin cậy cho các lô hàng gấp toàn cầu.",
+            "fullDescription": "Khi thời gian là vàng bạc, dịch vụ Vận Tải Hàng Không của chúng tôi mang lại tốc độ và độ tin cậy bạn cần. Chúng tôi hợp tác với các hãng hàng không thương mại và vận tải hàng hóa lớn để cung cấp lộ trình linh hoạt và giá cước cạnh tranh. Dù là bưu kiện nhỏ khẩn cấp hay hàng quá khổ, chúng tôi xử lý chính xác và cẩn thận, đảm bảo hàng hóa đến nơi an toàn và đúng lịch.",
+            "features": [
+                "Chuyển phát nhanh/Ưu tiên",
+                "Dịch vụ Gom Hàng",
+                "Giao hàng Cửa-Cửa",
+                "Thuê chuyến (Charter) cho Hàng Dự Án",
+                "Xử lý Hàng Nguy Hiểm"
+            ],
+            "benefits": [
+                "Thời gian vận chuyển nhanh nhất",
+                "An ninh cao, giảm rủi ro hư hại",
+                "Theo dõi toàn cầu thời gian thực",
+                "Lịch trình khởi hành và đến tin cậy"
+            ]
+        },
+        "road-transport": {
+            "title": "Vận Tải Nội Địa",
+            "shortDescription": "Giao nhận nội địa liền mạch, thiết kế theo lịch trình của bạn.",
+            "fullDescription": "Giao nhận nội địa liền mạch phù hợp với kế hoạch của bạn. Chúng tôi cung cấp các tùy chọn Giao Hàng Nhanh, Tiêu Chuẩn và Theo Lịch Trình với khả năng lấy hàng linh hoạt và kiểm soát nhiệt độ, đảm bảo dòng chảy hàng hóa không bị gián đoạn.",
+            "features": [
+                "Cửa-Cửa & Cảng-Cảng",
+                "Tùy chọn Lấy Hàng Linh Hoạt",
+                "Vận Chuyển Kiểm Soát Nhiệt Độ",
+                "Tùy chọn Nhanh & Theo Lịch",
+                "Theo Dõi Thời Gian Thực"
+            ],
+            "benefits": [
+                "Linh hoạt dịch vụ tận nơi",
+                "Hiệu quả chi phí cho cự ly ngắn/trung bình",
+                "Lịch trình khởi hành linh hoạt",
+                "Giám sát phương tiện thời gian thực"
+            ]
+        },
+        "project-cargo": {
+            "title": "Hàng Dự Án",
+            "shortDescription": "Xử lý chuyên biệt cho hàng hóa phức tạp, quá khổ và siêu trường siêu trọng.",
+            "fullDescription": "Đội ngũ Hàng Dự Án của chúng tôi cung cấp giải pháp chuyên biệt cho các lô hàng phức tạp, quá khổ. Chúng tôi quản lý mọi khía cạnh của các dự án logistics phức tạp, từ nghiên cứu khả thi lộ trình và xin giấy phép đến thiết bị xếp dỡ chuyên dụng và quản lý rủi ro thời gian thực, đảm bảo giao hàng an toàn và đúng hạn.",
+            "features": [
+                "Xử lý Hàng Quá Khổ & Giấy Phép",
+                "Vận Tải Siêu Trường Siêu Trọng",
+                "Lập Kế Hoạch Lộ Trình Tùy Chỉnh",
+                "Quản Lý Rủi Ro Thời Gian Thực",
+                "Điều Phối Viên Dự Án Chuyên Trách"
+            ],
+            "benefits": [
+                "Quản lý dự án đầu cuối",
+                "Tiếp cận thiết bị chuyên dụng",
+                "Xử lý chuyên nghiệp giấy phép/quy định",
+                "Giảm thiểu gián đoạn chuỗi cung ứng"
+            ]
+        },
+        "customs-brokerage": {
+            "title": "Khai Thuê Hải Quan",
+            "shortDescription": "Đại lý được cấp phép (Số 969/QĐ-TCHQ) am hiểu quy định phức tạp.",
+            "fullDescription": "Là Đại Lý Hải Quan được cấp phép (Số 969/QĐ-TCHQ), đội ngũ của chúng tôi đảm bảo lô hàng của bạn tuân thủ mọi luật lệ địa phương và quốc tế, ngăn ngừa chậm trễ và phạt vi phạm. Chúng tôi xử lý mọi chứng từ, tính toán thuế và quy trình nộp hồ sơ, tạo điều kiện thông quan suôn sẻ cho hàng nhập và xuất khẩu của bạn.",
+            "features": [
+                "Khai Báo Nhập & Xuất Khẩu",
+                "Tính Toán Thuế & Lệ Phí",
+                "Phân Loại Mã HS",
+                "Xin Giấy Phép & Chứng Nhận",
+                "Tư Vấn Hiệp Định Thương Mại Tự Do (FTA)"
+            ],
+            "benefits": [
+                "Ngăn ngừa chậm trễ/phạt tiền tốn kém",
+                "Tuân thủ quy định mới nhất",
+                "Đánh giá thuế chính xác",
+                "Giải phóng hàng hóa nhanh chóng"
+            ]
+        },
+        "value-added": {
+            "title": "Dịch Vụ Gia Tăng",
+            "shortDescription": "Bảo hiểm hàng hóa và xử lý hàng cá nhân chuyên biệt.",
+            "fullDescription": "Vượt trên cả vận chuyển. Chúng tôi cung cấp Bảo Hiểm Hàng Hóa và dịch vụ xử lý Hàng Cá Nhân chuyên biệt để đảm bảo sự an tâm tuyệt đối. Từ đóng gói chuyên dụng đến hỗ trợ chứng từ, chúng tôi chăm sóc những chi tiết quan trọng nhất.",
+            "features": [
+                "Dịch Vụ Bảo Hiểm Hàng Hóa",
+                "Xử Lý Hàng Cá Nhân / Di Dời",
+                "Xử Lý An Toàn & Bảo Mật",
+                "Đóng Gói Chuyên Dụng",
+                "Hỗ Trợ Chứng Từ"
+            ],
+            "benefits": [
+                "An tâm với bảo hiểm toàn diện",
+                "Dịch vụ cá nhân hóa",
+                "Bảo vệ hàng hóa tối đa",
+                "Xử lý chuyên nghiệp hàng nhạy cảm"
+            ]
+        },
+        "solution-consulting": {
+            "title": "Tư Vấn Giải Pháp",
+            "shortDescription": "Chiến lược chuỗi cung ứng tùy chỉnh để tối ưu hiệu quả và giảm chi phí.",
+            "fullDescription": "Mỗi doanh nghiệp có những thách thức logistics riêng. Dịch vụ Tư Vấn Giải Pháp của chúng tôi phân tích chuỗi cung ứng hiện tại của bạn để nhận diện điểm kém hiệu quả và cơ hội cải tiến. Chúng tôi thiết kế chiến lược tùy chỉnh giúp tiết kiệm chi phí, cải thiện tốc độ ra thị trường và tăng cường khả năng mở rộng cho sự phát triển của bạn.",
+            "features": [
+                "Phân Tích Chuỗi Cung Ứng",
+                "Tối Ưu Hóa Mạng Lưới",
+                "Chiến Lược Giảm Chi Phí",
+                "Quản Lý Rủi Ro",
+                "Giải Pháp Bền Vững"
+            ],
+            "benefits": [
+                "Tối ưu tổng chi phí logistics",
+                "Cải thiện hiệu quả vận hành",
+                "Quy trình có khả năng mở rộng",
+                "Tăng sự hài lòng khách hàng qua độ tin cậy"
+            ]
+        }
+    }
+}

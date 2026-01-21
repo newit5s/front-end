@@ -1,0 +1,294 @@
+{
+    "common": {
+        "getQuote": "Get Quote",
+        "trackShipment": "Track Shipment",
+        "learnMore": "Learn More",
+        "contactUs": "Contact Us",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "loading": "Loading...",
+        "switchLanguage": "Switch Language"
+    },
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About Us",
+        "contact": "Contact",
+        "tracking": "Tracking",
+        "quote": "Get Quote",
+        "news": "News"
+    },
+    "hero": {
+        "title": "Shipping The Future",
+        "subtitle": "Delivering Today",
+        "scrollToExplore": "Scroll to explore",
+        "clickHub": "Click hubs on globe"
+    },
+    "services": {
+        "badge": "Our Expertise",
+        "title": "Logistics Without Limits",
+        "description": "We orchestrate complex supply chains with precision, combining human expertise with advanced technology.",
+        "seaFreight": "Sea Freight",
+        "seaFreightDesc": "Cost-effective container solutions for high-volume international trade.",
+        "airFreight": "Air Freight",
+        "airFreightDesc": "Rapid and reliable air cargo services for time-critical shipments.",
+        "inlandTrucking": "Inland Trucking",
+        "inlandTruckingDesc": "Seamless domestic delivery tailored to your schedule.",
+        "projectCargo": "Project Cargo",
+        "projectCargoDesc": "Specialized handling for complex, oversized, and heavy-lift shipments.",
+        "customsBrokerage": "Customs Brokerage",
+        "customsBrokerageDesc": "Licensed brokerage (No. 969/QĐ-TCHQ) navigating complex regulations.",
+        "valueAdded": "Value-Added Services",
+        "valueAddedDesc": "Cargo insurance and specialized personal effects handling.",
+        "details": "Details"
+    },
+    "whyChooseUs": {
+        "badge": "Why Choose Seaair",
+        "title": "We Deliver Excellence Along With Your Cargo",
+        "description": "With over two decades of experience, we have built a reputation for reliability, efficiency, and customer-centric service. We go the extra mile to optimize your supply chain.",
+        "globalNetwork": "Global Network",
+        "globalNetworkDesc": "Extensive partnerships across 80+ countries ensuring seamless international logistics.",
+        "onTimeDelivery": "On-Time Delivery",
+        "onTimeDeliveryDesc": "Advanced tracking and optimized routing to ensure your cargo arrives on schedule.",
+        "secureInsured": "Secure & Insured",
+        "secureInsuredDesc": "Comprehensive cargo insurance and security protocols for peace of mind.",
+        "support247": "24/7 Support",
+        "support247Desc": "Dedicated support team available around the clock to handle any inquiries.",
+        "costEfficient": "Cost Efficient",
+        "costEfficientDesc": "Competitive rates and optimized logistics solutions to reduce your shipping costs.",
+        "industryCertified": "Industry Certified",
+        "industryCertifiedDesc": "Fully licensed and certified by major international logistics associations.",
+        "trustDelivered": "Trust Delivered.",
+        "everyShipment": "Every shipment, every time.",
+        "onTimeRate": "On-Time Delivery Rate"
+    },
+    "stats": {
+        "yearsExperience": "Years Experience",
+        "globalPartners": "Global Partners",
+        "countriesServed": "Countries Served",
+        "happyClients": "Happy Clients"
+    },
+    "cta": {
+        "titleRegular": "Ready to Streamline Your",
+        "titleHighlight": "Global Logistics?",
+        "description": "Experience world-class shipping solutions tailored to your business needs. Get a quote today and see the difference.",
+        "getQuote": "Get a Free Quote",
+        "contactSales": "Contact Sales"
+    },
+    "footer": {
+        "tagline": "Shipping The Future, Delivering Today. We connect global businesses with efficiency and reliability.",
+        "quickLinks": "Quick Links",
+        "aboutUs": "About Us",
+        "ourServices": "Our Services",
+        "trackShipment": "Track Shipment",
+        "requestQuote": "Request a Quote",
+        "contactSupport": "Contact Support",
+        "contactUs": "Contact Us",
+        "newsletter": "Newsletter",
+        "newsletterDesc": "Subscribe to our newsletter for the latest shipping news and updates.",
+        "subscribe": "Subscribe",
+        "emailPlaceholder": "Enter your email",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "allRightsReserved": "All rights reserved."
+    },
+    "quote": {
+        "title": "Request a Quote",
+        "subtitle": "Get a competitive shipping rate tailored to your logistics needs within 24 hours.",
+        "selectService": "Select Service",
+        "shipmentDetails": "Shipment Details",
+        "contactInfo": "Contact Info",
+        "origin": "Origin City/Port",
+        "destination": "Destination City/Port",
+        "incoterms": "Incoterms",
+        "grossWeight": "Gross Weight (kg)",
+        "fullName": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone",
+        "additionalDetails": "Additional Details",
+        "describeRequest": "Describe Your Request",
+        "otherServiceNote": "Please describe your special request in detail below. Our team will contact you to discuss the best solution.",
+        "otherPlaceholder": "Describe your request in detail: cargo type, requirements, timeline, etc...",
+        "detailsPlaceholder": "Describe your cargo, dimensions, special handling requirements...",
+        "requestQuote": "Request Quote",
+        "change": "Change",
+        "selectedService": "Selected Service",
+        "otherSpecial": "Other / Special Request"
+    },
+    "tracking": {
+        "title": "Track Your Shipment",
+        "subtitle": "Real-time visibility for your cargo",
+        "placeholder": "Enter Tracking Number",
+        "search": "Search",
+        "notFound": "Shipment not found",
+        "tryAgain": "Please check your tracking number and try again"
+    },
+    "contactPage": {
+        "title": "Contact Us",
+        "subtitle": "Global Reach, Local Expertise. Get in touch with our logistics professionals today.",
+        "getInTouch": "Get in Touch",
+        "intro": "Whether you have a question about shipping rates, need assistance with a current shipment, or want to discuss a long-term partnership, we're here to help.",
+        "headOffice": "Head Office",
+        "callUs": "Call Us",
+        "emailUs": "Email Us",
+        "workingHours": "Working Hours",
+        "sendMessage": "Send us a Message",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message",
+        "successTitle": "Message Sent!",
+        "successDesc": "Thank you for contacting us. One of our team members will get back to you shortly.",
+        "sendAnother": "Send Another Message"
+    },
+    "servicesPage": {
+        "heroBadge": "Global Logistics Solutions",
+        "heroTitleRegular": "Comprehensive",
+        "heroTitleGradient": "Services",
+        "heroDescription": "End-to-end supply chain management tailored to your specific business needs. From air to sea, we cover it all.",
+        "getQuote": "Get a Quote",
+        "customSolutionTitle": "Need a Custom Solution?",
+        "customSolutionDesc": "Our logistics experts are ready to design a supply chain strategy that fits your unique business requirements.",
+        "viewCaseStudies": "View Case Studies",
+        "backToServices": "Back to Services",
+        "serviceOverview": "Service Overview",
+        "keyCapabilities": "Key Capabilities",
+        "whyChoose": "Why Choose Our {service}?",
+        "requestQuoteCardTitle": "Request a Quote",
+        "requestQuoteCardDesc": "Need a customized shipping solution? Fill out our form to get a quick estimate.",
+        "getQuoteNow": "Get Quote Now",
+        "contactExpert": "Contact Expert",
+        "contactExpertDesc": "Have questions about this service? Reach out to our dedicated team.",
+        "otherServices": "Other Services",
+        "readyToStart": "Ready to get started?",
+        "readyDesc": "Let us handle the logistics so you can focus on your business.",
+        "talkToExpert": "Talk to an Expert"
+    },
+    "servicesData": {
+        "sea-freight": {
+            "title": "Sea Freight",
+            "shortDescription": "Cost-effective container shipping solutions for large volume international trade.",
+            "fullDescription": "As a cost-effective solution for large shipping volumes, our Sea Freight services connect you to major ports worldwide. We offer Full Container Load (FCL) and Less than Container Load (LCL) options, giving you flexibility regardless of your cargo size. Our strong relationships with shipping lines ensure space allocation and competitive pricing even during peak seasons.",
+            "features": [
+                "FCL (Full Container Load)",
+                "LCL (Less than Container Load)",
+                "Reefer / Temperature Controlled Containers",
+                "Breakbulk & RORO Services",
+                "Port-to-Port & Door-to-Door"
+            ],
+            "benefits": [
+                "Most economical for large volumes",
+                "Suitable for non-urgent shipments",
+                "Capable of handling oversized/heavy cargo",
+                "Environmentally friendly option"
+            ]
+        },
+        "air-freight": {
+            "title": "Air Freight",
+            "shortDescription": "Fast and reliable air cargo services for your time-sensitive shipments globally.",
+            "fullDescription": "When time is of the essence, our Air Freight services provide the speed and reliability you need. We partner with major commercial airlines and cargo carriers to offer flexible routing and competitive rates. Whether it's a small urgent parcel or oversized cargo, we handle it with precision and care, ensuring your goods reach their destination safely and on schedule.",
+            "features": [
+                "Express/Priority Air Freight",
+                "Consolidation Services",
+                "Door-to-Door Delivery",
+                "Charter Services for Project Cargo",
+                "Hazardous Materials Handling"
+            ],
+            "benefits": [
+                "Fastest transit times for urgent shipments",
+                "High security and lower risk of damage",
+                "Real-time global tracking visibility",
+                "Reliable departure and arrival schedules"
+            ]
+        },
+        "road-transport": {
+            "title": "Inland Trucking",
+            "shortDescription": "Seamless domestic delivery tailored to your schedule.",
+            "fullDescription": "Seamless domestic delivery tailored to your schedule. We provide Express, Standard, and Scheduled delivery options with flexible pickup and temperature-controlled capabilities.",
+            "features": [
+                "Door-to-Door & Port-to-Port",
+                "Flexible Pickup Options",
+                "Temperature-Controlled Delivery",
+                "Express & Scheduled Options",
+                "Real-Time Tracking"
+            ],
+            "benefits": [
+                "Door-to-door service flexibility",
+                "Cost-effective for short to medium distances",
+                "Flexible departure schedules",
+                "Real-time tracking of vehicles"
+            ]
+        },
+        "project-cargo": {
+            "title": "Project Cargo",
+            "shortDescription": "Specialized handling for complex, oversized, and heavy-lift shipments.",
+            "fullDescription": "Our Project Cargo team provides specialized handling for complex, oversized, and heavy-lift shipments. We manage every aspect of complex logistics projects, from route feasibility studies and permit acquisition to specialized loading equipment and real-time risk management, ensuring timely and safe delivery.",
+            "features": [
+                "Oversized Cargo Handling & Permits",
+                "Heavy-Lift Transportation",
+                "Customized Route Planning",
+                "Real-Time Risk Management",
+                "Dedicated Project Coordinator"
+            ],
+            "benefits": [
+                "End-to-end project management",
+                "Access to specialized equipment",
+                "Expert handling of permits and regulations",
+                "Minimized supply chain disruption"
+            ]
+        },
+        "customs-brokerage": {
+            "title": "Customs Brokerage",
+            "shortDescription": "Licensed broker (Ref 969/QĐ-TCHQ) navigating complex regulations.",
+            "fullDescription": "As a licensed Customs Broker (Ref No. 969/QĐ-TCHQ), our team ensures your shipments comply with all local and international laws, preventing delays and penalties. We handle all documentation, duty calculations, and filing processes, facilitating smooth clearance for your imports and exports.",
+            "features": [
+                "Import & Export Declaration",
+                "Duty & Tax Calculation",
+                "HS Code Classification",
+                "License & Permit Application",
+                "Free Trade Agreement (FTA) Consultation"
+            ],
+            "benefits": [
+                "Prevention of costly delays/fines",
+                "Compliance with latest regulations",
+                "Accurate duty/tax assessment",
+                "Speedy cargo release"
+            ]
+        },
+        "value-added": {
+            "title": "Value-Added Services",
+            "shortDescription": "Cargo insurance and specialized personal cargo handling.",
+            "fullDescription": "Going beyond transport. We offer Cargo Insurance and specialized handling for Personal Cargo to ensure total peace of mind.",
+            "features": [
+                "Cargo Insurance Services",
+                "Personal Cargo Handling",
+                "Safe & Secure Handling",
+                "Specialized Packaging",
+                "Documentation Support"
+            ],
+            "benefits": [
+                "Peace of mind with insurance coverage",
+                "Personalized service",
+                "Comprehensive cargo protection",
+                "Expert handling of sensitive items"
+            ]
+        },
+        "solution-consulting": {
+            "title": "Solution Consulting",
+            "shortDescription": "Tailored supply chain strategies to optimize efficiency and reduce costs.",
+            "fullDescription": "Every business has unique logistics challenges. Our Solution Consulting services analyze your current supply chain to identify inefficiencies and opportunities for improvement. We design tailored strategies that result in cost savings, improved speed-to-market, and enhanced scalability for your business growth.",
+            "features": [
+                "Supply Chain Analysis",
+                "Network Optimization",
+                "Cost Reduction Strategies",
+                "Risk Management",
+                "Sustainability Solutions"
+            ],
+            "benefits": [
+                "Optimized total cost of logistics",
+                "Improved operational efficiency",
+                "Scalable processes for growth",
+                "Enhanced customer satisfaction through reliability"
+            ]
+        }
+    }
+}
